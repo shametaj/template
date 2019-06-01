@@ -1,0 +1,133 @@
+body {
+	margin: auto 0;
+	font-family: 'Cormorant Garamond', serif;
+}
+
+.zone {
+	cursor: pointer;
+	font-size: 2em;
+	border-radius: 3px;
+	border: 1px solid #bbb;
+	transition: all 0.3s linear;
+
+}
+
+.box:hover {
+	-webkit-transform:rotate(-7deg);
+	-moz-transform:rotate(-7deg);
+	-o-transform:rotate(-7deg);
+	transform:rotate(-7deg);
+
+}
+
+.blue {
+	background-color: rgba(0,0,240,0.8);
+	color: white;
+
+
+}
+
+.orange {
+	background-color: orange;
+	
+
+	
+}
+
+.white {
+	background-color: white;
+
+
+	
+}
+
+.black {
+	background-color: #444;
+	color: #f2f2f6;
+
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.navbar {
+  display: flex;
+  list-style: none;
+  font-size: 0.7em;
+  margin: 0px;
+
+}
+
+/* Medium screens */
+@media all and (max-width: 800px) {
+  .navbar {
+    /* When on medium sized screens, we center it by evenly distributing empty space around items */
+    justify-content: space-around;
+    font-size: 0.5em;
+    padding: 0;
+  }
+}
+
+/* Small screens */
+@media all and (max-width: 450px) {
+  .navbar {
+    /* On small screens, we are no longer using row direction but column */
+    font-size: 0.6em;
+    padding: 0;
+    flex-direction: column;
+  }
+}
+
+a {
+	text-decoration: none;
+	color: #f2f3f4;
+
+}
+
+li {
+	  padding: 20px;
+}
+
+.push {
+	margin-left: auto;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 77vh;
+}
+
+.cover {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 35rem;
+}
+
+.grid-wrapper {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.box > img {
+	width: 100%;
+}
+
+.box {
+	background-color: #f2f3f4;
+	padding: 100px;
+	margin: 10px;
+}
+
+footer {
+	text-align: center;
+	font-size: 1em;
+	padding: 10px;
+}
+
